@@ -51,19 +51,36 @@
 						<h2 style="font-weight: bold">Recent Work (click to expand)</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
+								<a id="img7" class="image fit thumb"><img src="images/nih.jpg" alt=""/></a>
+								<h3 style="font-weight: bold">National Institutes of Health </h3>
+								<p>Software Engineering Intern (2/2021 - present)</p>
+							</article>
+							<div style="padding: 0" id="modal7" class="modal">
+								<div id="modal7-content" class="modal-content animate-zoom">
+									<span class="close">&times;</span>
+									<p class="modal-title"> National Institutes of Health </p>
+									<p class="modal-subtitle"> Software Engineering Intern </p>
+									<p class="modal-subtitle"> Bethesda, MD | February 2021 - present </p>
+									<p class="modal-text"> <br> I'm currently working with Dr. Clem McDonald,
+									director of the Lister Hill National Center for Biomedical Communications, on
+									FHIR, a universally adopted standard for transferring electronic health records. </p>
+								</div>
+							</div>
+							<article class="col-6 col-12-xsmall work-item">
 								<a id="img1" class="image fit thumb"><img src="images/jpl.jpeg" alt="" /></a>
 								<h3 style="font-weight: bold">NASA Jet Propulsion Laboratory </h3>
-								<p>Incoming Software Engineering Intern (6/2020 - 8/2020)</p>
+								<p> Software Engineering Intern (6/2020 - 8/2020)</p>
 							</article>
 							<div style="padding: 0" id="modal1" class="modal">
 								<div id="modal1-content" class="modal-content animate-zoom">
 									<span class="close">&times;</span>
 									<p class="modal-title"> NASA Jet Propulsion Laboratory </p>
-									<p class="modal-subtitle"> Incoming Software Engineering Intern </p>
+									<p class="modal-subtitle">  Software Engineering Intern </p>
 									<p class="modal-subtitle"> Pasadena, CA | June 2020 - August 2020 </p>
-									<p class="modal-text"> <br> This summer, I'll be interning at the NASA
-										Jet Propulsion Laboratory in Pasadena, California. I'll be analyzing
-										and visualizing star formation data. </p>
+									<p class="modal-text"> <br> I worked with Dr. Paul Goldsmith, supervisor of NASA's 
+									structure of the universe group, on analyzing and solving issues in massive star 
+									formation. Over the course of 3 months, I designed, tested, and implemented a 
+									Python program that resolved issues of foreground absorption in NASA spectroscopy data. </p>
 								</div>
 							</div>
 							<article class="col-6 col-12-xsmall work-item">
@@ -93,10 +110,11 @@
 									<span class="close">&times;</span>
 									<p class="modal-title">Harvard Consulting on Business & the Environment</p>
 									<p class="modal-subtitle"> Quantitative Analyst & Consultant</p>
-									<p class="modal-subtitle"> Cambridge, MA | February 2020 - Present </p> 
-									<p class="modal-text"> <br> I am currently a quantitative analyst and consultant for Harvard’s 
+									<p class="modal-subtitle"> Cambridge, MA | February 2020 - present </p> 
+									<p class="modal-text"> <br> I am a quantitative analyst and consultant for Harvard’s 
 										premier strategy consulting group, Harvard CBE, with previous clients including Amazon, 
-										Microsoft, and Pfizer. Right now, I'm on a consulting case for a Fortune 500 company. </p>
+										Microsoft, and Pfizer. I've worked with company executives at Intuit and Global Green
+										to provide actionable insight on methods for company diversification and expansion. </p>
 								</div>
 							</div>
 							<article class="col-6 col-12-xsmall work-item">
@@ -195,90 +213,115 @@
 		<!-- Scripts -->
 			<script>
 				var img1 = document.getElementById("img1");
-				var m1 = document.getElementById("modal1")
-				var btn1 = document.getElementsByClassName("close")[0];
-				var img2 = document.getElementById("img2");
-				var m2 = document.getElementById("modal2")
-				var btn2 = document.getElementsByClassName("close")[1];
-				var img3 = document.getElementById("img3");
-				var m3 = document.getElementById("modal3")
-				var btn3 = document.getElementsByClassName("close")[2];
-				var img4 = document.getElementById("img4");
-				var m4 = document.getElementById("modal4")
-				var btn4 = document.getElementsByClassName("close")[3];
-				var img5 = document.getElementById("img5");
-				var m5 = document.getElementById("modal5")
-				var btn5 = document.getElementsByClassName("close")[4];
-				var img6 = document.getElementById("img6");
-				var m6 = document.getElementById("modal6")
-				var btn6 = document.getElementsByClassName("close")[5];
-
+				var m1 = document.getElementById("modal1");
+				var btn1 = document.getElementsByClassName("close")[1];
 				img1.onclick = function() {
 					m1.style.display='flex';
-				}
+				};
 				btn1.onclick = function() {
 					m1.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m1) {
 						m1.style.display = "none";
 					}
-				}
+				};
+			</script> 
+			<script>
+				var img2 = document.getElementById("img2");
+				var m2 = document.getElementById("modal2");
+				var btn2 = document.getElementsByClassName("close")[2];
 				img2.onclick = function() {
 					m2.style.display='flex';
-				}
+				};
 				btn2.onclick = function() {
 					m2.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m2) {
 						m2.style.display = "none";
 					}
-				}
+				};
+			</script>
+			<script>
+				var img3 = document.getElementById("img3");
+				var m3 = document.getElementById("modal3");
+				var btn3 = document.getElementsByClassName("close")[3];
 				img3.onclick = function() {
 					m3.style.display='flex';
-				}
+				};
 				btn3.onclick = function() {
 					m3.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m3) {
 						m3.style.display = "none";
 					}
-				}
+				};
+			</script>
+			<script>
+				var img4 = document.getElementById("img4");
+				var m4 = document.getElementById("modal4");
+				var btn4 = document.getElementsByClassName("close")[4];
 				img4.onclick = function() {
 					m4.style.display='flex';
-				}
+				};
 				btn4.onclick = function() {
 					m4.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m4) {
 						m4.style.display = "none";
 					}
-				}
+				};
+			</script>
+			<script>
+				var img5 = document.getElementById("img5");
+				var m5 = document.getElementById("modal5");
+				var btn5 = document.getElementsByClassName("close")[5];
 				img5.onclick = function() {
 					m5.style.display='flex';
-				}
+				};
 				btn5.onclick = function() {
 					m5.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m5) {
 						m5.style.display = "none";
 					}
-				}
+				};
+			</script>
+			<script>
+				var img6 = document.getElementById("img6");
+				var m6 = document.getElementById("modal6");
+				var btn6 = document.getElementsByClassName("close")[6];
 				img6.onclick = function() {
 					m6.style.display='flex';
-				}
+				};
 				btn6.onclick = function() {
 					m6.style.display="none";
-				}
+				};
 				window.onclick = function(event) {
 					if (event.target == m6) {
 						m6.style.display = "none";
 					}
-				}
+				};
+			</script>
+			<script>
+				var img7 = document.getElementById("img7");
+				var m7 = document.getElementById("modal7");
+				var btn7 = document.getElementsByClassName("close")[0];
+				img7.onclick = function() {
+					m7.style.display='flex';
+				};
+				btn7.onclick = function() {
+					m7.style.display="none";
+				};
+				window.onclick = function(event) {
+					if (event.target == m7) {
+						m7.style.display = "none";
+					}
+				};
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
